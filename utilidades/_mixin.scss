@@ -1,0 +1,122 @@
+
+
+@mixin header( $float, $margin, $padding-left){
+    float: $float;
+    margin: $margin;
+    padding-left: $padding-left;
+}
+
+@mixin productos($font-size, $margin-top, $margin-left){
+    font-size: $font-size;
+    margin-top: $margin-top ;
+    margin-left: $margin-left;
+}
+
+@mixin video($height, $width, $object-fit){
+    height: $height;
+    width: $width;
+    object-fit: $object-fit;
+}
+
+@mixin section-title( $font-size, $text-align, $padding-top, $background-image, $background-size, $background-position, $background-attachment, $background-repeat, $height, $color, $font-style ){
+    font-size: $font-size;
+    text-align: $text-align;
+    padding-top: $padding-top;
+    background-image: $background-image;
+    background-size: $background-size;
+    background-position: $background-position;
+    background-attachment: $background-attachment;
+    background-repeat: $background-repeat;
+    height: $height;
+    color: $color;
+    font-style: $font-style;
+}
+
+@mixin flex-container ( $display, $padding, $padding-top, $padding-bottom){
+    display: $display;
+    padding: $padding;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
+
+@mixin main-info( $font-size, $padding-left, $padding-top){
+    font-size: $font-size;
+    padding-left: $padding-left;
+    padding-top: $padding-top;
+}
+
+@mixin title-flex( $font-size, $padding-top, $padding-left){
+    font-size: $font-size;
+    padding-top: $padding-top;
+    padding-left: $padding-left;
+}
+
+@mixin flex-container3( $display, $padding-bottom, $padding-top){
+    display: $display;
+    padding-bottom: $padding-bottom;
+    padding-top: $padding-top;
+}
+
+@mixin flex-title1( $font-size, $padding-bottom, $text-align){
+    font-size: $font-size;
+    padding-bottom: $padding-bottom;
+    text-align: $text-align;
+}
+
+@mixin h1-section2( $font-size, $padding-top, $color, $font-style, $padding-left, $padding-bottom, $background-image, $background-repeat, $background-size, $background-position, $background-attachment, $max-width, $max-height){
+    font-size: $font-size;
+    padding-top: $padding-top;
+    color: $color;
+    font-style: $font-style;
+    padding-left: $padding-left;
+    padding-bottom: $padding-bottom;
+    background-image: $background-image;
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+    background-position: $background-position;
+    background-attachment: $background-attachment;
+    max-width: $max-width;
+    max-height: $max-height;
+}
+@mixin main-container2( $padding-left, $font-size, $padding-bottom, $padding-top){
+    padding-left: $padding-left;
+    font-size: $font-size;
+    padding-bottom: $padding-bottom;
+    padding-top: $padding-top;
+}
+
+@mixin flex-container1( $display, $padding-top, $padding-right, $padding-left , $margin){
+    display: $display;
+    padding-top: $padding-top;
+    padding-right: $padding-right;
+    padding-left: $padding-left;
+    margin: $margin;
+}
+
+@mixin h3-flex( $padding-bottom, $font-size, $text-align){
+    padding-bottom: $padding-bottom;
+    font-size: $font-size;
+    text-align: $text-align;
+    
+}
+
+@mixin section-title1($font-size, $padding-top, $padding-left, $background-image, $background-repeat, $height, $background-size, $background-attachment){
+    font-size: $font-size;
+    padding-top: $padding-top;
+    padding-left: $padding-left;
+    background-image: $background-image;
+    background-repeat: $background-repeat;
+    height: $height;
+    background-size: $background-size;
+    background-attachment: $background-attachment;
+}
+
+@mixin main-container3($padding-left, $padding-top, $font-size, $padding-bottom, $max-width){
+    padding-left: $padding-left;
+    padding-top: $padding-top;
+    font-size: $font-size;
+    padding-bottom: $padding-bottom;
+    max-width: $max-width;
+}
+
+

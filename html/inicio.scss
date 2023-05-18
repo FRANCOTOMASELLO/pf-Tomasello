@@ -1,0 +1,328 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+.logo{
+    @extend %logo;
+}
+
+.nav-item{
+    @include header( left, 20px, 30px)
+}
+
+.navbar-nav{
+    margin-left: 200px;
+}
+
+.video{
+   @include video(100%, 100%, cover)
+}
+
+.flex-title{
+    text-align: center
+}
+
+
+.h1-section{
+    .title-main{
+        @extend %section-title;
+        color: $color-principal
+    }
+}
+
+.h1-section1{
+    @extend %section-title;
+    color: $color-principal;
+}
+
+.h1-section4{
+    @extend %section-title;
+    color: $color-principal;
+}
+.main-container{
+    @extend %main-container;
+    color: $color-secundario;
+}
+
+.main-info{
+    color: $color-secundario;
+    @include main-info( 25px, 70px, 70px)
+}
+
+.title-flex{
+    color: $color-principal;
+    @include title-flex( 35px, 260px, 70px)
+}
+.flex-container3{
+    @include flex-container3( inline-flex, 180px, 80px)
+}
+
+.flex-item2{
+    padding: 30px;
+}
+
+.flex-title1{
+    color: $color-principal;
+    @include flex-title1( 25px, 20px, center)
+}
+
+.flex-info{
+    margin-top: 20px;
+    text-align: center;
+    color: $color-secundario;
+}
+
+.img-cordoba{
+    @extend %img;
+    margin-left: 120px
+}
+
+.img-aeroparque{
+    @extend %img;
+}
+
+.img-ezeiza{
+    @extend %img;
+}
+
+
+.h1-container{
+    padding-top: 11px;
+}
+
+.h1-section2{
+    @include h1-section2( 70px, 300px, rgb(255, 255, 255) , oblique, 100px, 400px, url(../images/flota.jpg.jpg), no-repeat, 100%, center, fixed, 100%, 100%);
+}
+
+.main-container2{
+    @include main-container2( 50px, 25px, 90px, 200px);
+    color: $color-principal;
+}
+
+.parrafo2{
+    font-size: 40px;
+}
+
+.parrafo1{
+    color: $color-secundario;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.flex-container1{
+    @extend %flex-container;
+
+}
+
+.flex-item1{
+    margin: 30px;
+}
+.h3-flex{
+    color: $color-principal;
+    @include h3-flex( 15px, 28px, center);
+    .img-embraer{
+        max-width: 100%;
+    }
+    .info-flex{
+        color: $color-secundario;
+    }
+}
+
+.flex-container2{
+  @extend %flex-container;
+}
+
+.main-container1{
+    @extend %main-container;
+    color: $color-secundario;
+}
+
+.section-container{
+    padding-top: 190px;
+}
+
+.section-title{
+    @include section-title( 50px, center, 200px, url(../images/aerolineas2.png), 100%, center, fixed, no-repeat, 500px, rgb(255, 255, 255), oblique, );
+}
+
+.flex-container{
+  @include flex-container( flex, 70px, 180px, 180px)
+}
+.flex-item{
+    margin: 30px;
+}
+
+.flex-title{
+    padding: 10px;
+    font-size: 32px;
+    color: $color-principal;
+}
+
+
+.h1-container2{
+    
+    color: $color-principal;
+    padding-left: 0;
+}
+
+
+.section-title1{
+    @include section-title1( 50px, 260px, 70px, url(../images/aeroplus.jpg.jpeg), no-repeat,  600px, 100%, fixed)
+}
+
+.main-container3{
+    color: $color-secundario;
+    @include main-container3( 60px, 200px, 25px, 250px, 100%)
+}
+
+
+.footer{
+    background-color: rgb(250, 244, 244);
+    padding-top: 60px;
+    text-align: center;
+}
+
+.footer-enlace{
+    margin: 180px;
+    color:$color-secundario ;
+    text-decoration: none;
+}
+
+.footer-final{
+    margin-top: 50px;
+    font-size: 13px;
+
+}
+
+
+@media (max-width:800px){ 
+    
+*{
+    margin: auto;
+    padding: auto;
+  }
+
+    .navbar-nav{
+        margin-left: 25%;
+    }
+    .title-main{
+        font-size: 2.2rem;
+    }
+    .video{
+        height: 400px;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    .flex-container1{
+        flex-direction: column;
+    }
+    .flex-container2{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .flex-container3{
+        flex-direction: column;
+    }
+
+    .nav-item{
+        padding-left: 0%;
+    }  
+
+    .h1-section{
+        margin-left: auto;
+    }
+
+    .section-title{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 70px;
+        background-image: url(../images/aerolineas2.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 500%;
+        height: 500px;
+        color: rgb(255, 255, 255);
+        font-style: oblique;
+      }
+    .main-container{
+        padding-left: 35px;
+        padding-right: 20px;
+    }
+
+    
+    .flex-title{
+        font-size: 40px;
+      }
+
+  .main-container3{
+    padding-left: 15px;
+  }
+
+  .main-info{
+    padding-right: auto;
+  }
+  .h1-section4{
+    font-size: 3.5rem;
+    padding-top: 80px;
+  }
+
+  .title-flex{
+    padding-right: auto;
+    padding-top: 100px;
+  }
+  
+  .section-title1{
+    font-size: 60px;    
+    padding-top: 150px;
+    color: rgb(57, 111, 165) ;
+    padding-left: 70px;
+    background-image: url(../images/aeroplus.jpg.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    height: 500px;
+    font-style: oblique;
+    padding-left: 35px;
+  }
+
+  .img-aeroparque{
+    padding-left: 23px;
+  }
+  .img-ezeiza{
+    padding-left: 23px;
+  }
+
+  .img-cordoba{
+    padding-left: 23px;
+  }
+  .h1-section2{
+    font-size: 60px;
+    padding-top: 290px;
+    color: rgb(57, 111, 165) ;
+    text-anchor: middle;
+    padding-left: 70px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 450%;
+    height: 500px;
+    font-style: oblique;
+    padding-left: 35px;
+  }
+
+  .flex-info{
+    padding-right: auto ;
+  }
+  .img-embraer{
+    max-width: 100%;
+  }
+
+ 
+
+  .main-text{
+    text-align: center;
+  }
+}

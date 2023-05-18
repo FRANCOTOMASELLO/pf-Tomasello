@@ -1,0 +1,9 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+.h1-section1{
+    @extend %section-title;
+    color: $color-principal;
+}
